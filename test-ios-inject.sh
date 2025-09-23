@@ -9,8 +9,8 @@ function build() {
 
 function testCase() {
   echo "==========Test Start=========="
-  ./inject testiOS/app.ipa -d  @executable_path/testiOS/injectiOSFramework.framework --ipa
-  ./inject testiOS/app.ipa -d  @executable_path/testiOS/libinjectiOS.dylib --ipa  
+  ./inject testiOS/app.ipa -d  @executable_path/testiOS/injectiOSFramework.framework
+  ./inject testiOS/app.ipa -d  @executable_path/testiOS/libinjectiOS.dylib  
   echo "==========Test Result=========="
   unzip testiOS/app.ipa > /dev/null
   otool -L Payload/TestLock.app/TestLock
