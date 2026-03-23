@@ -26,8 +26,7 @@ let package = Package(
             name: "inject",
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser")
-            ],
-            path: "Sources/inject"
+            ]
         ),
         .target(
             name: "injection",
